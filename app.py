@@ -8,11 +8,11 @@ def home():
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.html')
+    return render_template('/resume.html')
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')
+    return render_template('/projects.html')
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080, debug=True)
